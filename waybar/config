@@ -1,0 +1,47 @@
+{
+    "layer": "bottom",
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["sway/window"],
+    "modules-right": [
+        "custom/gpu",
+        "cpu",
+        "memory",
+        "custom/drive",
+        "wireplumber",
+        "custom/clock"
+    ],
+    "sway/window": {
+        "max-length": 50
+    },
+    "clock": {
+        "format": "{:%I:%M %p}"
+    },
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "max-volume": 100,
+        "scroll-step": 1,
+        "format-icons": ["", "", ""]
+    },
+    "cpu": {
+        "interval": 1,
+        "format": "{usage:3}% | {avg_frequency:4} GHz | 7800X3D "
+    },
+    "memory": {
+        "interval": 1,
+        "format": "{used:4.1f} GiB "
+    },
+    "custom/clock": {
+        "exec": "date +\"%-m/%-d/%y %-I:%M %p\"",
+        "interval": 1
+    },
+    "custom/gpu": {
+        "exec": "~/.config/waybar/gpu_stats.sh",
+        "format": "{} | 7900 GRE ",
+        "interval": 1
+    },
+    "custom/drive": {
+        "exec": "~/.config/waybar/drive_stats.sh",
+        "format": "{} ",
+        "interval": 5
+    }
+}
