@@ -1,0 +1,9 @@
+/*
+
+!/.gitignore
+!/foot
+!/sway
+!/waybar
+!/micro
+/micro/*
+!/micro/settings.json
