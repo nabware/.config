@@ -32,6 +32,11 @@ if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 fi
 ```
 
+## Google Chrome
+
+Run Google Chrome with `google-chrome-stable --ozone-platform=wayland`
+and set permanently through `chrome://flags`.
+
 ## Bluetooth
 
 ```
