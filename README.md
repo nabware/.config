@@ -5,14 +5,13 @@
 ```
 sudo pacman -S mesa sway wmenu dmenu foot micro wl-clipboard \
 waybar otf-font-awesome pipewire wireplumber pipewire-alsa bluez bluez-utils \
-vulkan-icd-loader vulkan-radeon vulkan-headers vulkan-validation-layers \
-vulkan-tools xorg-xwayland renderdoc
+git base-devel vulkan-icd-loader vulkan-radeon vulkan-headers \
+vulkan-validation-layers vulkan-tools xorg-xwayland renderdoc
 ```
 
 ## Yay
 
 ```
-sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
