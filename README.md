@@ -3,8 +3,10 @@
 ## Packages
 
 ```
-sudo pacman -S mesa sway xorg-xwayland wmenu dmenu foot micro wl-clipboard \
-waybar otf-font-awesome pipewire wireplumber pipewire-alsa bluez bluez-utils
+sudo pacman -S mesa sway wmenu dmenu foot micro wl-clipboard \
+waybar otf-font-awesome pipewire wireplumber pipewire-alsa bluez bluez-utils \
+vulkan-icd-loader vulkan-radeon vulkan-headers vulkan-validation-layers \
+vulkan-tools xorg-xwayland renderdoc
 ```
 
 ## Yay
