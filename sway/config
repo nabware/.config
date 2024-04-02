@@ -25,7 +25,7 @@ font monospace 12
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output DP-3 resolution 2560x1440@144Hz
+output * resolution 2560x1440@144Hz
 #
 # Example configuration:
 #
