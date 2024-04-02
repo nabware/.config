@@ -218,3 +218,7 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+for_window [app_id=".*"] floating enable
+for_window [app_id="foot"] floating disable
+for_window [app_id="google-chrome"] floating disable
