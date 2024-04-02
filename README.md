@@ -57,3 +57,9 @@ git config --global user.email user@email.com
 git config --global init.defaultBranch main
 git config --global credential.helper store
 ```
+
+## Rust
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
