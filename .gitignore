@@ -4,6 +4,7 @@
 !/foot
 !/sway
 !/waybar
+!/gtk-3.0
 !/micro
 /micro/*
 !/micro/settings.json
