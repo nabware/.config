@@ -18,9 +18,12 @@
     },
     "wireplumber": {
         "format": "{volume}% {icon}",
+        "format-muted": "{volume}% ",
+        "min-length": 7,
         "max-volume": 100,
         "scroll-step": 1,
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""],
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
     },
     "cpu": {
         "interval": 1,
