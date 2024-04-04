@@ -3,7 +3,7 @@
 ## Packages
 
 ```
-sudo pacman -S mesa sway wmenu dmenu foot micro wl-clipboard \
+sudo pacman -S mesa sway wmenu dmenu foot micro wl-clipboard grim \
 waybar otf-font-awesome noto-fonts-emoji \
 pipewire wireplumber pipewire-alsa bluez bluez-utils \
 git base-devel vulkan-icd-loader vulkan-radeon vulkan-headers \
