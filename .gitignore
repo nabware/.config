@@ -10,3 +10,4 @@
 !/micro
 /micro/*
 !/micro/settings.json
+!/code-flags.conf

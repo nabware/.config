@@ -21,7 +21,7 @@ makepkg -si
 ## AUR Packages
 
 ```
-yay -S google-chrome
+yay -S google-chrome visual-studio-code-bin
 ```
 
 ## Start Sway automatically on TTY login
