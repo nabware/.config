@@ -3,5 +3,6 @@
     "workbench.startupEditor": "none",
     "window.restoreWindows": "none",
     "files.hotExit": "off",
-    "editor.inlayHints.enabled": "off"
+    "editor.inlayHints.enabled": "off",
+    "editor.codeLens": false
 }
