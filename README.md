@@ -64,3 +64,19 @@ git config --global credential.helper store
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
+
+## Steam
+
+Uncomment lines below in `/etc/pacman.conf`:
+
+```
+#[multilib]
+#Include = /etc/pacman.d/mirrorlist
+```
+
+Upgrade and install:
+
+```
+sudo pacman -Syu
+sudo pacman -S steam
+```
