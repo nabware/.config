@@ -92,7 +92,7 @@ button:hover {
 #custom-clock,
 #custom-gpu,
 #custom-drive,
-#custom-temps {
+#custom-cpu-temp {
     padding: 0 10px;
     color: #ffffff;
 }
@@ -337,6 +337,6 @@ label:focus {
     background-color: #964B00;
 }
 
-#custom-temps {
+#custom-cpu-temp {
     background-color: #00A3A3;
 }

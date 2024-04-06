@@ -5,8 +5,8 @@
     "modules-right": [
         "custom/gpu",
         "cpu",
+        "custom/cpu-temp",
         "memory",
-        "custom/temps",
         "custom/drive",
         "wireplumber",
         "custom/clock"
@@ -48,9 +48,9 @@
         "format": "{} ",
         "interval": 5
     },
-    "custom/temps": {
-        "exec": "~/.config/waybar/temps.sh",
-        "format": "{} | ",
+    "custom/cpu-temp": {
+        "exec": "~/.config/waybar/cpu_temp.sh",
+        "format": "{} ",
         "interval": 1
     },
 }
