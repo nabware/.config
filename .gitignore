@@ -16,3 +16,8 @@
 !/Code/User
 /Code/User/*
 !/Code/User/settings.json
+!/wireplumber
+/wireplumber/*
+!/wireplumber/wireplumber.conf.d
+/wireplumber/wireplumber.conf.d/*
+!/wireplumber/wireplumber.conf.d/10-disable-hdmi-audio.conf
