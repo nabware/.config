@@ -91,7 +91,8 @@ button:hover {
 #mpd,
 #custom-clock,
 #custom-gpu,
-#custom-drive {
+#custom-drive,
+#custom-temps {
     padding: 0 10px;
     color: #ffffff;
 }
@@ -334,4 +335,8 @@ label:focus {
 
 #custom-drive {
     background-color: #964B00;
+}
+
+#custom-temps {
+    background-color: #00A3A3;
 }

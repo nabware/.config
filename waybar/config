@@ -6,6 +6,7 @@
         "custom/gpu",
         "cpu",
         "memory",
+        "custom/temps",
         "custom/drive",
         "wireplumber",
         "custom/clock"
@@ -46,5 +47,10 @@
         "exec": "~/.config/waybar/drive_stats.sh",
         "format": "{} ",
         "interval": 5
-    }
+    },
+    "custom/temps": {
+        "exec": "~/.config/waybar/temps.sh",
+        "format": "{} | ",
+        "interval": 1
+    },
 }
