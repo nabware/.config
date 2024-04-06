@@ -1,10 +1,13 @@
 #!/bin/bash
 
-gpu_util=$(cat /sys/class/drm/card1/device/gpu_busy_percent | printf "%3d")
+util=$(
+    awk '{printf "%3d", $1}' \
+    /sys/class/hwmon/hwmon4/device/gpu_busy_percent
+)
 
-gpu_freq=$(
-    awk 'NR==2 {printf "%.2f", substr($2, 1, length($2) - 3) / 1000}' \
-    /sys/class/drm/card1/device/pp_dpm_sclk
+freq=$(
+    awk '{printf "%4.2f", $1 / 1000000000}' \
+    /sys/class/hwmon/hwmon4/freq1_input
 )
 
 vram=$(
@@ -27,4 +30,4 @@ power=$(
     /sys/class/hwmon/hwmon4/power1_average
 )
 
-echo "$gpu_util% | $gpu_freq GHz | $tedge°C ($tjunc) | $power W | $vram GiB"
+echo "$util% | $freq GHz | $tedge°C ($tjunc) | $power W | $vram GiB"
