@@ -12,9 +12,19 @@ vram=$(
     /sys/class/drm/card1/device/mem_info_vram_used
 )
 
-temp=$(
+tedge=$(
     awk '{printf "%2d", $1 / 1000}' \
-    /sys/class/drm/card1/device/hwmon/hwmon*/temp1_input
+    /sys/class/hwmon/hwmon4/temp1_input
 )
 
-echo "$gpu_util% | $gpu_freq GHz | $vram GiB | $temp°C"
+tjunc=$(
+    awk '{printf "%2d", $1 / 1000}' \
+    /sys/class/hwmon/hwmon4/temp2_input
+)
+
+power=$(
+    awk '{printf "%3d", $1 / 1000000}' \
+    /sys/class/hwmon/hwmon4/power1_average
+)
+
+echo "$gpu_util% | $gpu_freq GHz | $tedge°C ($tjunc) | $power W | $vram GiB"
