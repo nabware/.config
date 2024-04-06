@@ -4,5 +4,8 @@
     "window.restoreWindows": "none",
     "files.hotExit": "off",
     "editor.inlayHints.enabled": "off",
-    "editor.codeLens": false
+    "editor.codeLens": false,
+    "editor.rulers": [
+        80
+    ]
 }
