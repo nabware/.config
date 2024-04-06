@@ -12,4 +12,9 @@ vram=$(
     /sys/class/drm/card1/device/mem_info_vram_used
 )
 
-echo "$gpu_util% | $gpu_freq GHz | $vram GiB"
+temp=$(
+    awk '{printf "%2d", $1 / 1000}' \
+    /sys/class/drm/card1/device/hwmon/hwmon*/temp1_input
+)
+
+echo "$gpu_util% | $gpu_freq GHz | $vram GiB | $temp°C"
