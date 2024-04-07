@@ -219,10 +219,4 @@ bar {
 
 include /etc/sway/config.d/*
 
-for_window [app_id=".*"] floating enable
-for_window [app_id="foot"] floating disable
-for_window [app_id="google-chrome"] floating disable
-for_window [app_id="code-url-handler"] floating disable
-for_window [class="steam"] floating disable
-
 bindsym Print exec grim ~/screenshot_$(date -u +"%Y_%m_%d_%H_%M_%S_%N").png
