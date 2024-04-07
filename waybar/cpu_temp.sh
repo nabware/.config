@@ -1,13 +1,15 @@
 #!/bin/bash
 
-tdie=$(
-    awk '{printf "%2d", $1 / 1000}' \
-    /sys/class/hwmon/hwmon2/temp3_input
-)
+hwmon_dir=$($HOME/.config/waybar/hwmon_dir.sh k10temp)
 
-tjunc=$(
-    awk '{printf "%2d", $1 / 1000}' \
-    /sys/class/hwmon/hwmon2/temp1_input
-)
+if [[ "$?" != 0 ]]; then
+    exit 1
+elif [[ "$hwmon_dir" == "" ]]; then
+    echo "CPU hwmon dir not found"
+    exit 1
+fi
+
+tdie=$(awk '{printf "%2d", $1 / 1000}' $hwmon_dir/temp3_input)
+tjunc=$(awk '{printf "%2d", $1 / 1000}' $hwmon_dir/temp1_input)
 
 echo "$tdie°C ($tjunc)"
