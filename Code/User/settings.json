@@ -7,5 +7,6 @@
     "editor.codeLens": false,
     "editor.rulers": [
         100
-    ]
+    ],
+    "editor.minimap.enabled": false
 }
