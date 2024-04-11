@@ -84,7 +84,7 @@ sudo pacman -S steam
 ## OBS
 
 ```
-sudo pacman -S obs qt6-wayland xdg-desktop-portal-wlr libva-mesa-driver
+sudo pacman -S obs-studio qt6-wayland xdg-desktop-portal-wlr libva-mesa-driver
 ```
 
 ## VLC
