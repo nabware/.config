@@ -6,6 +6,6 @@
     "editor.inlayHints.enabled": "off",
     "editor.codeLens": false,
     "editor.rulers": [
-        80
+        100
     ]
 }
