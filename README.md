@@ -80,3 +80,16 @@ Upgrade and install:
 sudo pacman -Syu
 sudo pacman -S steam
 ```
+
+## OBS
+
+```
+sudo pacman -S obs qt6-wayland xdg-desktop-portal-wlr libva-mesa-driver
+```
+
+## VLC
+
+```
+sudo pacman -S vlc
+yay -S vlc-plugin-pipewire
+```
