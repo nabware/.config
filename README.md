@@ -5,7 +5,7 @@
 ```
 sudo pacman -S mesa sway wmenu dmenu foot micro wl-clipboard grim \
 waybar otf-font-awesome noto-fonts-emoji \
-pipewire wireplumber pipewire-alsa bluez bluez-utils \
+pipewire wireplumber pipewire-alsa pipewire-jack pipewire-pulse bluez bluez-utils \
 git base-devel vulkan-icd-loader vulkan-radeon vulkan-headers \
 vulkan-validation-layers vulkan-tools xorg-xwayland renderdoc
 ```
