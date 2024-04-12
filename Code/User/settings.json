@@ -8,5 +8,6 @@
     "editor.rulers": [
         100
     ],
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false
 }
