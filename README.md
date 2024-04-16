@@ -85,6 +85,7 @@ sudo pacman -S steam
 
 ```
 sudo pacman -S obs-studio qt6-wayland xdg-desktop-portal-wlr libva-mesa-driver
+yay -S droidcam-obs-plugin
 ```
 
 ## VLC
