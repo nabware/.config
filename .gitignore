@@ -10,6 +10,7 @@
 !/micro
 /micro/*
 !/micro/settings.json
+!/chrome-flags.conf
 !/code-flags.conf
 !/Code
 /Code/*
